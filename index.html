@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/06ed8aae12.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="logo" draggable="true">Porfolio</div>
+        <ul>
+            <li class="hideonphone"><a href="#">Home</a></li>
+            <li class="hideonphone"><a href="#sec1">About</a></li>
+            <li class="hideonphone"><a href="#sec2">Skills</a></li>
+            <li class="hideonphone"><a href="#sec3">Projects</a></li>
+            <li class="hideonphone"><a href="#sec4">Contact</a></li>
+            <li onclick=showsidebar() ><a ><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+        <ul class="sidebar">
+          <li onclick=hidesidebar()><a ><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#sec1">About</a></li>
+          <li><a href="#sec2">Skills</a></li>
+          <li><a href="#sec3">Projects</a></li>
+          <li><a href="#sec4">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+        
+        <div class="intro">
+            <span>Hello, It's Me</span>
+            <span>Saurabh Kumar</span>
+            <span>And I'm a <span id="element"></span> </span>
+         <div class="cv"><button>Download CV</button></div>
+        </div>
+        <div class="mainimg">
+        <img src="assets/—Pngtree—programmers code the website from_4157702.png" alt=""></div>
+        
+        
+    </main>
+    <section id="sec1">
+    <!-- About me -->
+ 
+  
+        <div class="secimg1"><img src="assets/586e7e8b-a4bf-4769-a8f0-b727c9eac628.jpg" alt=""></div>
+        <div class="about">
+            <h1 class="heading">About me</h1>
+            <p>I'm a passionate 3rd-year B.Tech Computer Science student, navigating the exciting realms of technology. <br> Proficient in HTML, CSS, and JavaScript, I craft immersive web experiences that blend creativity with functionality. <br> With a solid foundation in C++, C, and Data Structures & Algorithms, I thrive on solving complex problems <br> and building efficient solutions. <br>Eager to contribute to the ever-evolving tech landscape, <br> I bring a blend of technical prowess and a keen eye for detail to every project. <br>Join me on this coding journey, where innovation meets dedication, and let's shape the digital future together</p></div>
+
+    
+    </section>
+    <section id="sec2">
+        <h1 class="heading skill">Skills</h1>
+        <div class="skills">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Designing</h2>
+            <p>Proficient in HTML, CSS, and JavaScript, I craft websites that not only look great but also function seamlessly. Bringing ideas to life on the web is what I do best</p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-computer"></i>
+            <h2>Problem Solving</h2>
+            <p>As a problem-solving enthusiast, I leverage my skills in data structures and algorithms using C++, Python, and C. I enjoy tackling coding challenges, optimizing solutions, and implementing efficient algorithms to create robust and effective software</p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-gear"></i>
+            <h2>UI/UX Design</h2>
+            <p>Passionate about user-centric design, I create visually appealing and intuitively navigable interfaces. From wireframes to pixel-perfect layouts, I strive to enhance the overall user experience in every project.</p>
+            <a href="">Learn more</a>
+          </div>
+        </div>
+    </section>
+    <section id="sec3">
+      <h1 class="heading">Projects</h1><div class="projects">
+      <div class="project">
+        
+        <div class="project-inner">
+          <div class="project-front">
+            <img src="assets/download (1).png" alt="">
+          </div>
+          <div class="project-back">
+            <h2>Netflix Clone</h2>
+            <p>Excited to showcase my HTML and CSS skills with a Netflix clone in my portfolio! Meticulously crafted, this project mirrors the sleek design and functionality of the streaming giant</p>
+            <div class="back-footer">
+              <button>Github</button><button onclick="location.href='https://netflixproject1.netlify.app/'">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-inner">
+          <div class="project-front">
+            <img src="assets/blank-white-7sn5o1woonmklx1h.jpg" alt="">
+          </div>
+          <div class="project-back">
+            <h2>Project Name</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis tenetur autem. Aspernatur nemo corrupti fuga sequi esse do</p>
+            <div class="back-footer">
+              <button>Github</button><button>Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-inner">
+          <div class="project-front">
+            <img src="assets/blank-white-7sn5o1woonmklx1h.jpg" alt="">
+          </div>
+          <div class="project-back">
+            <h2>Project Name</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis tenetur autem. Aspernatur nemo corrupti fuga sequi esse do</p>
+            <div class="back-footer">
+              <button>Github</button><button>Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="sec4">
+         <h1 class="heading">Contact Us</h1>
+         <div class="contact">
+          <form action="">
+          <label for="">Name :<input type="text"></label><br>
+          <label for="">Email : <input type="email"></label><br>
+          <label for="">Phone no. : <input type="phone"></label><br>
+          <button type="submit">Submit</button>
+          </form></div>
+          <div class="follow">
+            <h2>Follow Me :</h2>
+            <div class="social-media">
+              <i class="fa-brands fa-github" onclick="location.href='https://github.com/saurabhkumar1073'"></i>
+              <i class="fa-brands fa-linkedin"onclick="location.href='https://www.linkedin.com/in/saurabh-kumar-9390802a6/'"></i>
+              <i class="fa-brands fa-twitter"onclick="location.href'"></i>
+            </div>
+          </div>
+         
+    </section>
+    <footer>
+      Copyright &#169; 2023 Saurabh Kumar. All Rights Reserved
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ["Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer.","Web Developer.","Programmer.","Graphic Designer."],
+          typeSpeed: 50,
+          
+        });
+      </script>
+      
+    
+  
+
+</body>
+</html>
